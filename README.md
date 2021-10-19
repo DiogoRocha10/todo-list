@@ -1,4 +1,4 @@
-# Projeto
+# Project
 
 To-do list for study purposes, using ReactJs and Typescript, styling with styled components for knowledge base.
 
