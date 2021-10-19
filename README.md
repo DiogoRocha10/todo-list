@@ -1,3 +1,7 @@
+# Projeto
+
+To-do list for study purposes, using ReactJs and Typescript, styling with styled components for knowledge base.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
