@@ -1,4 +1,4 @@
-import { useState, KeyboardEvent } from "react";
+import { useState, KeyboardEvent, ChangeEvent } from "react";
 import * as C from "./styles";
 
 type Props = {
@@ -14,6 +14,11 @@ export const AddArea = ({ onEnter }: Props) => {
       setInputText("");
     }
   };
+
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setInputText(e.target.value);
+  };
+
   return (
     <C.Container>
       <div className="image">➕</div>
@@ -21,7 +26,7 @@ export const AddArea = ({ onEnter }: Props) => {
         type="text"
         placeholder="Adicione uma tarefa"
         value={inputText}
-        onChange={(e) => setInputText(e.target.value)}
+        onChange={handleInputChange}
         onKeyUp={handleKeyUp}
       />
     </C.Container>
